@@ -4,8 +4,13 @@ return {
 	noremap = true,
 	silent = true
     },
-
-    config = function()
+    config = function ()
 
     end,
+    init = function ()
+        vim.lsp.config("qmlls", {
+            cmd = { "/usr/lib/qt6/bin/qmlls -E" }
+        })
+        vim.lsp.enable("qmlls")
+    end
 }

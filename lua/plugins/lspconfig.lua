@@ -9,7 +9,7 @@ return {
     end,
     init = function ()
         vim.lsp.config("qmlls", {
-            cmd = { "/usr/lib/qt6/bin/qmlls -E" }
+            cmd = { "/usr/lib/qt6/bin/qmlls", "-E" }
         })
         vim.lsp.enable("qmlls")
     end

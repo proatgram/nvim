@@ -37,6 +37,9 @@ return {
             --   extension_config_key = value,
             -- }
             -- please take a look at the readme of the extension you want to configure
+            possession = {
+
+            }
         }
     },
     init = function()

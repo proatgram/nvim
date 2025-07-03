@@ -4,6 +4,20 @@ return {
     keys = {
         {"<leader>w", "<cmd>NvimTreeToggle<cr>", desc = "Toggle Nvim Tree"}
     },
+    cmd = {
+        "NvimTreeOpen",
+        "NvimTreeClose",
+        "NvimTreeToggle",
+        "NvimTreeFocus",
+        "NvimTreeRefresh",
+        "NvimTreeFindFile",
+        "NvimTreeFindFileToggle",
+        "NvimTreeClipboard",
+        "NvimTreeResize",
+        "NvimTreeCollapse",
+        "NvimTreeCollapseKeepBuffers",
+        "NvimTreeHiTest"
+    },
     opts = {
         sort = {
             sorter = "case_sensitive",

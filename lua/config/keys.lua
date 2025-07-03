@@ -20,3 +20,11 @@ end)
 -- Buffers
 vim.keymap.set("n", "<leader><Left>", ":bprevious<CR>")    -- previous buffer
 vim.keymap.set("n", "<leader><Right>", ":bnext<CR>")        -- next buffer
+vim.keymap.set("n", "<leader><Backspace>", ":bp|bd #<CR>") -- Moves to previous buffer, deletes previous
+
+
+vim.keymap.set("n", "p", "P") -- Delete without yanking (default behavior with P, but muscle memory forbinds 😔)
+
+vim.api.nvim_create_user_command("Q", "qa", {})
+
+vim.keymap.set("n", "<leader>qq", ":Q<CR>")

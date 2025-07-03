@@ -4,7 +4,8 @@ return {
     "jedrzejboczar/possession.nvim",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        "tiagovla/scope.nvim"
+        "tiagovla/scope.nvim",
+        "nvim-tree/nvim-tree.lua"
     },
     lazy = false,
     opts = {
@@ -66,14 +67,14 @@ return {
                 },
                 force = false,  -- or fun(buf): boolean
             },
-            nvim_tree = true,
+            nvim_tree = false,
             neo_tree = true,
             symbols_outline = true,
             outline = true,
             tabby = true,
-            dap = true,
-            dapui = true,
-            neotest = true,
+            dap = false,
+            dapui = false,
+            neotest = false,
             kulala = true,
             delete_buffers = false,
             stop_lsp_clients = false,

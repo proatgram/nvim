@@ -31,6 +31,9 @@ return {
         vim.lsp.config("qmlls", {
             cmd = { "/usr/lib/qt6/bin/qmlls", "-E" }
         })
+        vim.lsp.config("clangd", {
+            cmd = { "clangd", "--experimental-modules-support" }
+        })
         vim.lsp.enable("qmlls")
     end
 }

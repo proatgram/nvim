@@ -28,3 +28,8 @@ vim.keymap.set("n", "p", "P") -- Delete without yanking (default behavior with P
 vim.api.nvim_create_user_command("Q", "qa", {})
 
 vim.keymap.set("n", "<leader>qq", ":Q<CR>")
+
+vim.keymap.set("i", "<C-H>", "<Left>")
+vim.keymap.set("i", "<C-L>", "<Right>")
+vim.keymap.set("i", "<C-J>", "<Down>")
+vim.keymap.set("i", "<C-K>", "<Up>")

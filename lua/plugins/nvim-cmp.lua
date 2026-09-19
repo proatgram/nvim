@@ -27,6 +27,9 @@ return {
                     -- require("cmp.config").set_onetime({ sources = {} })
                 end,
             },
+            completion = {
+                keyword_length = 1,
+            },
             window = {
                 completion = cmp.config.window.bordered(),
                 documentation = cmp.config.window.bordered(),

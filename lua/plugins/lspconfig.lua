@@ -34,6 +34,7 @@ return {
         vim.lsp.config("clangd", {
             cmd = { "clangd", "--experimental-modules-support" }
         })
+        vim.lsp.enable("clangd")
         vim.lsp.enable("qmlls")
     end
 }
